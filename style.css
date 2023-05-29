@@ -1,0 +1,174 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    color: rgba(51, 48, 34, 1);
+    font-family: 'Noto Sans TC', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+canvas {
+    display: block;
+}
+
+iframe {
+    position: fixed;
+    border: none;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.container {
+    padding: 10% 10%;
+}
+
+.card {
+    background-color: rgba(250, 245, 230, 0.85);
+    padding: 24px;
+    margin: 16px 0px;
+    /* border-style: solid;
+    border-radius: 10px;
+    border-color: rgba(255, 249, 217, 0.5);
+    border-width: 2px; */
+}
+
+p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.card ul {
+    padding-top: 0px;
+    padding-left: 8px;
+    padding-bottom: 8px;
+    padding-right: 0px;
+    list-style-type: disc;
+    margin-block-start: 0;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 16px;
+}
+
+.card p {
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.5px;
+}
+
+.card .sp {
+    margin-top: 20px;
+    padding: 0;
+}
+
+.card .ps {
+    margin-top: 20px;
+    padding: 0;
+}
+
+.card li {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+}
+
+.card hr {
+    border: 1px solid;
+    border-color: #9c8e76;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+h2 {
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.card span {
+    display: block;
+    padding: 8px 0px 4px 0px;
+}
+
+.card input {
+    font-size: 14px;
+    padding: 4px 0px;
+    /* border: none; */
+    border-radius: 5px;
+    border: solid;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 12px;
+    border-color: rgb(134, 134, 134);
+    border-width: 1px;
+}
+
+.card input.textbox {
+    width: 100%;
+}
+
+.card input.selectbtn {
+    accent-color: rgb(119, 104, 75);
+}
+
+
+/* .card input[type="radio"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #555555;
+  border-radius: 50%;
+  background-clip: content-box;
+  padding: 3px;
+  margin: 0;
+}
+
+input[type="radio"]:checked {
+  background-color: #555555;
+} */
+
+button {
+    border: none;
+    border-radius: 5px;
+    padding: 10px 16px;
+    background-color: rgb(21, 48, 69);
+    color: rgba(230, 221, 195);
+    letter-spacing: 4px;
+    width: 100%;
+    font-weight: 700;
+}
+
+@media only screen and (min-width: 768px) {
+    .container {
+        padding: 16% 28%;
+    }
+    h1 {
+        font-size: 36px;
+    }
+    h2 {
+        font-size: 22px;
+        letter-spacing: 1px;
+    }
+    .card p {
+        font-size: 16px;
+        line-height: 28px;
+    }
+    .card li {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .card input {
+        font-size: 16px;
+    }
+    .card .ps {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}

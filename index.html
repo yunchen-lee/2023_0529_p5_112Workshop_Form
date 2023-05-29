@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>「生成藝術家的第一步」報名意願調查表單</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;600;700&family=Raleway:ital,wght@0,400;0,600;0,800;1,400;1,600;1,800&display=swap" rel="stylesheet">
+
+    <script src="libraries/p5.min.js"></script>
+    <script src="libraries/p5.sound.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+</head>
+
+<style>
+    iframe {
+        position: fixed;
+        border: none;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+</style>
+
+<body>
+    <iframe src="bg.html"></iframe>
+
+    <div class="container">
+        <div class="card">
+            <h1>「生成藝術家的第一步」元宇宙生成式藝術體驗與實踐課程</h1>
+            <hr>
+            <!-- <h2>課程資訊</h2> -->
+            <p>
+                課程日期 | 112學年上學期課程，每周三下午一點至四點(包含1小時教學課程與2小時練習時間)
+                <br>地址 | 東梨學院藝文空間（台北市大同區迪化街一段256號）前棟2F
+                <br>課程人數 | 實體班 30人/班
+                <br>課程費用 | 免報名費
+            </p>
+            <!-- <p class="ps">*此課程表單將於8/04報名截止，報名人數超過上限則提早截止，有不便請見諒🙇‍♀️</p> -->
+
+            <p class="sp">課程大綱：
+                <ul>
+                    <li>「生成藝術的演化」認識20世紀現代藝術美學與生成藝術發展</li>
+                    <li>「p5.js實作演練」 了解 p5.js 與各領域生成藝術工具</li>
+                    <li>「當代大師欣賞」 藉由當代大師的典範作品，解讀程式碼並認識生成美感</li>
+                    <li>「NFT實戰演練」 同時邀請國際生成藝術家擔任Mentor陪伴學生生創意發想、課後演練，引用紮實且有趣的教學範例，帶領大家實際上手程式語法、創作完整的生成式藝術作品。</li>
+                </ul>
+            </p>
+            <p class="ps">主辦單位 | 東方廣告</p>
+            <p class="ps">協辦場地 | 東梨學院藝文空間</p>
+        </div>
+        <div class="card">
+            <!-- <h2>報名資訊</h2> -->
+            <span>姓名</span><input class="textbox" id="nameValue" type="text">
+            <br><span>聯絡電話</span><input class="textbox" id="phoneValue" type="text">
+            <br><span>聯絡郵件</span><input class="textbox" id="mailValue" type="email">
+            <!--             <br><span>飲食習慣</span>
+            <input class="selectbtn" id="foodValue-meat" type="radio" name="foodValue" value="meat">葷&nbsp&nbsp
+            <input class="selectbtn" id="foodValue-vegetarian" type="radio" name="foodValue" value="vegetarian">素 -->
+            <br><span>如何得知本課程</span>
+            <input class="selectbtn" id="infosource-media" type="checkbox" name="infosourceValue" value="media">社群媒體&nbsp&nbsp
+            <input class="selectbtn" id="infosource-friend" type="checkbox" name="infosourceValue" value="friend">朋友介紹
+            <br><span>是否有任何程式經驗，若有請簡單描述，若無填寫「無」即可</span><input class="textbox" id="codeValue" type="text">
+        </div>
+        <div class="card">
+            <h2>感謝您的填寫</h2>
+            <p class="ps">此表單用於調查112學年上學期課程報名意願，後續將透過郵件寄送課程相關資訊，正式選課請留意學校選課系統公告。</p>
+            <!-- <p>後續聯繫方式：</p> -->
+            <p class="ps">協辦場地聯繫方式 | 東梨學院藝文空間 02-2768-8777</p>
+        </div>
+        <button id="btn">送出表單</button>
+
+    </div>
+
+    <script src="event.js"></script>
+    <!-- <script src="sketch.js "></script> -->
+</body>
+
+</html>
+
+<!-- 網址 -->
+<!-- https://script.google.com/macros/s/AKfycbwxh-MJgcy8ls_q2G4rO1mmtxF-mOhBIwc6l_V5ekMyKBrLq4eYrZfD-5IPArJ6RRqXzw/exec -->
+
+<!-- 部署作業 ID -->
+<!-- AKfycbwxh-MJgcy8ls_q2G4rO1mmtxF-mOhBIwc6l_V5ekMyKBrLq4eYrZfD-5IPArJ6RRqXzw -->
