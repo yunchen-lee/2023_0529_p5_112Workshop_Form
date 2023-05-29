@@ -15,7 +15,7 @@ function send() {
     let code = document.querySelector('#codeValue').value;
 
     $.ajax({
-        url: "https://script.google.com/a/macros/arch.nycu.edu.tw/s/AKfycbzpNafjAV0eJNkdiQGXcgsAFwEX2wuefnv6vWz4B0EihtEls_7IBvTWu3e4WjL2M9PT/exec",
+        url: "https://script.google.com/macros/s/AKfycbxm9di7tGt0k9hjM5qkbMBV9sISCj0_o33sSW11yvibfnn_7dfrZ_7tRXCaZK0pWw/exec",
         data: {
             "name": name,
             "phone": phone,
