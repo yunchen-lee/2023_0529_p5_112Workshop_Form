@@ -4,8 +4,8 @@ function send() {
     let name = document.querySelector('#nameValue').value;
     let phone = document.querySelector('#phoneValue').value;
     let mail = document.querySelector('#mailValue').value;
-//     let meat = "";
-//     let vege = "";
+    let meat = "";
+    let vege = "";
 //     if (document.querySelector('#foodValue-meat').checked) meat = document.querySelector('#foodValue-meat').value;;
 //     if (document.querySelector('#foodValue-vegetarian').checked) vege = document.querySelector('#foodValue-vegetarian').value;;
     let media = "";
