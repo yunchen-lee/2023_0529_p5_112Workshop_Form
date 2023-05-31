@@ -118,6 +118,32 @@ h2 {
     accent-color: rgb(119, 104, 75);
 }
 
+.imgBox {
+    padding-top: 45%;
+    position: relative;
+}
+
+.imgBox img {
+    position: absolute;
+    /* padding: 8px; */
+    /* margin: 8px; */
+    width: 48%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.imgBox .leftimg {
+    left: 0;
+    top: 0;
+    margin-right: 4px;
+}
+
+.imgBox .rightimg {
+    margin-left: 4px;
+    right: 0;
+    top: 0;
+}
+
 
 /* .card input[type="radio"] {
   appearance: none;
