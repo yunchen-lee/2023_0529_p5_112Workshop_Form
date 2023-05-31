@@ -4,10 +4,12 @@ function send() {
     let name = document.querySelector('#nameValue').value;
     let phone = document.querySelector('#phoneValue').value;
     let mail = document.querySelector('#mailValue').value;
+    let sch = document.querySelector('#schValue').value;
+
     let meat = "";
     let vege = "";
-//     if (document.querySelector('#foodValue-meat').checked) meat = document.querySelector('#foodValue-meat').value;;
-//     if (document.querySelector('#foodValue-vegetarian').checked) vege = document.querySelector('#foodValue-vegetarian').value;;
+    //     if (document.querySelector('#foodValue-meat').checked) meat = document.querySelector('#foodValue-meat').value;;
+    //     if (document.querySelector('#foodValue-vegetarian').checked) vege = document.querySelector('#foodValue-vegetarian').value;;
     let media = "";
     let friend = "";
     if (document.querySelector('#infosource-media').checked) media = document.querySelector('#infosource-media').value;
@@ -15,11 +17,12 @@ function send() {
     let code = document.querySelector('#codeValue').value;
 
     $.ajax({
-        url: "https://script.google.com/macros/s/AKfycbxm9di7tGt0k9hjM5qkbMBV9sISCj0_o33sSW11yvibfnn_7dfrZ_7tRXCaZK0pWw/exec",
+        url: "https://script.google.com/macros/s/AKfycbz8bnE6LKTxV19fVKc1YpWJ57A88HXRWqyTQZuC_mSAE0izzTk_nuAplnng85Z0hSlu/exec",
         data: {
             "name": name,
             "phone": phone,
             "mail": mail,
+            "school": sch,
             "foodMeat": meat,
             "foodVege": vege,
             "infoMedia": media,
