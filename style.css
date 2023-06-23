@@ -144,6 +144,13 @@ h2 {
     top: 0;
 }
 
+.imgBox .fullimg {
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: 90%;
+}
+
 
 /* .card input[type="radio"] {
   appearance: none;
