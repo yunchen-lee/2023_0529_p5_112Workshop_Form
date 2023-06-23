@@ -5,13 +5,16 @@
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-JCBF4JCHJN"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
 
-      gtag('config', 'G-JCBF4JCHJN');
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-JCBF4JCHJN');
     </script>
-    
+
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:image" content="pic/cover-1.png">
@@ -84,6 +87,11 @@
             <p class="ps">■ 課程運用之工具/軟體──p5.js：<br>p5.js是一種以Processing 語言為基礎、用於創意編碼的JavaScript庫，具免費及開源的特性，專注於讓藝術家、設計師、教育工作者、初學者和都可以訪問和包容編碼。具有全套繪圖功能，可將整個瀏覽器頁面視為草圖，包括應用於文本、輸入、影像、網路攝像頭和聲音的 HTML5。</p>
             <hr><br>
             <p>發起人</p>
+            <p class="ps">■ 蔡紫德(Tzu-Te Tsai)/ 中山女高教師<br>曾為教育部美感教育課程推廣計畫協同主持人，長期投入設計教育、科技教育課程，從2021年起與校內數學科老師攜手以參數生成設計，開啟校內新興科技計畫活動，期待學生能打破文理組的藩籬，以數學為形 / 生成為式，創造視覺設計的可能性。 2022年中山女高125校慶時，透過訪談邀請徵集數百位校友影像記憶，與學生共同完成五件跨越時空的點雲NFT作品，多年來持續以生活空間為題，期待發展更多高中生跨領域課程的樣貌。
+            </p>
+            <div class="imgBox">
+                <img class="fullimg" src="pic/teacher-tsai.PNG" alt="artist">
+            </div>
             <p class="ps">■ 溫詠筌(jimi wen) / 獨立藝術家<br>現為獨立藝術家，畢業於倫敦帝國理工大學電機博士班( Imperial College EEE, BEng, MSc, PhD)，創作類型豐富多元，涵蓋金工、書法與陶藝，更以本科所學應用於程式編碼生成式藝術(Generative Art)。其透過數位藝術作為跨越國境的共同語言，融合禪修、道家思想等華文文化進行轉譯，創造新書畫、新詩詞等各種數位藝術的多元可能性。</p>
             <div class="imgBox">
                 <img class="leftimg" src="pic/artist0-0.PNG" alt="artist">
@@ -128,7 +136,8 @@
 
             <br><span>如何得知本課程</span>
             <input class="selectbtn" id="infosource-media" type="checkbox" name="infosourceValue" value="media">社群媒體&nbsp&nbsp
-            <input class="selectbtn" id="infosource-friend" type="checkbox" name="infosourceValue" value="friend">朋友介紹
+            <input class="selectbtn" id="infosource-friend" type="checkbox" name="infosourceValue" value="friend">朋友介紹&nbsp&nbsp
+            <input class="selectbtn" id="infosource-sch" type="checkbox" name="infosourceValue" value="sch">學校宣傳
             <br><span>是否有任何程式經驗，若有請簡單描述，若無填寫「無」即可</span><input class="textbox" id="codeValue" type="text">
         </div>
         <div class="card">
