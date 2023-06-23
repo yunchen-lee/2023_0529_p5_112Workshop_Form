@@ -12,12 +12,15 @@ function send() {
     //     if (document.querySelector('#foodValue-vegetarian').checked) vege = document.querySelector('#foodValue-vegetarian').value;;
     let media = "";
     let friend = "";
+    let infosch = "";
     if (document.querySelector('#infosource-media').checked) media = document.querySelector('#infosource-media').value;
     if (document.querySelector('#infosource-friend').checked) friend = document.querySelector('#infosource-friend').value;
+    if (document.querySelector('#infosource-sch').checked) infosch = document.querySelector('#infosource-sch').value;
+
     let code = document.querySelector('#codeValue').value;
 
     $.ajax({
-        url: "https://script.google.com/macros/s/AKfycbz8bnE6LKTxV19fVKc1YpWJ57A88HXRWqyTQZuC_mSAE0izzTk_nuAplnng85Z0hSlu/exec",
+        url: "https://script.google.com/macros/s/AKfycbwZr3h2rjHbWXF4Oe7NwF1J9cvPUfbOOx05wr8ixTTp6zN9cCvtQYYRswKW6j8V-gFW/exec",
         data: {
             "name": name,
             "phone": phone,
@@ -27,6 +30,7 @@ function send() {
             "foodVege": vege,
             "infoMedia": media,
             "infoFriend": friend,
+            "infoSch": infosch,
             "codeSkill": code
         },
         // success: function(response) {
