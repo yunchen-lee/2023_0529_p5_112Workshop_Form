@@ -18,9 +18,17 @@ function send() {
     if (document.querySelector('#infosource-sch').checked) infosch = document.querySelector('#infosource-sch').value;
 
     let code = document.querySelector('#codeValue').value;
+    
+    let tue = "";
+    let thu = "";
+    let sat = "";
+    if (document.querySelector('#taTime-tue').checked) tue = document.querySelector('#taTime-tue').value;
+    if (document.querySelector('#taTime-thu').checked) thu = document.querySelector('#taTime-thu').value;
+    if (document.querySelector('#taTime-sat').checked) sat = document.querySelector('#taTime-sat').value;
+
 
     $.ajax({
-        url: "https://script.google.com/macros/s/AKfycbwZr3h2rjHbWXF4Oe7NwF1J9cvPUfbOOx05wr8ixTTp6zN9cCvtQYYRswKW6j8V-gFW/exec",
+        url: "https://script.google.com/macros/s/AKfycbwbQ_uFPEX0vVd1PTBCBGriGQVrGgaxL4EAplVX0A5bO6REaghPtLVQFft-4uV3RIMx/exec",
         data: {
             "name": name,
             "phone": phone,
@@ -31,7 +39,10 @@ function send() {
             "infoMedia": media,
             "infoFriend": friend,
             "infoSch": infosch,
-            "codeSkill": code
+            "codeSkill": code,
+            "taTimeTue": tue,
+            "taTimeThu": thu,
+            "taTimeSat": sat
         },
         // success: function(response) {
         //     if (response == "成功") {
@@ -39,7 +50,6 @@ function send() {
         //     }
         // },
     });
-
     document.querySelector('#btn').innerHTML = '已收到您回覆的表單';
     // document.querySelector('#btn').innerText = 'Hide Result';
     // document.querySelector('#btn').textContent = 'Hide Result';
