@@ -19,16 +19,16 @@ function send() {
 
     let code = document.querySelector('#codeValue').value;
 
-    let tue = "";
+    // let tue = "";
     // let thu = "";
     let sat = "";
-    if (document.querySelector('#taTime-tue').checked) tue = document.querySelector('#taTime-tue').value;
+    // if (document.querySelector('#taTime-tue').checked) tue = document.querySelector('#taTime-tue').value;
     // if (document.querySelector('#taTime-thu').checked) thu = document.querySelector('#taTime-thu').value;
     if (document.querySelector('#taTime-sat').checked) sat = document.querySelector('#taTime-sat').value;
 
 
     $.ajax({
-        url: "https://script.google.com/macros/s/AKfycbxT56ibs8sXHOKpO3GitnuJ_MMyea_TouBbxPWOqD0ihrUwVQ02N400OuxFaAK22YoQ/exec",
+        url: "https://script.google.com/macros/s/AKfycbyC5hTOg3LMy0GVReOPKvCxAahM30CXqJ5h28sWjA0RJUsC5IhmrPwfcQM-hWQptgdZ/exec",
         data: {
             "name": name,
             "phone": phone,
@@ -40,7 +40,7 @@ function send() {
             // "infoFriend": friend,
             // "infoSch": infosch,
             "codeSkill": code,
-            "taTimeTue": tue,
+            // "taTimeTue": tue,
             // "taTimeThu": thu,
             "taTimeSat": sat
         },
